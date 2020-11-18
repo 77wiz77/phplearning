@@ -7,8 +7,8 @@
 <body>
 <?php
 $name = $_POST["firstname"];
-$surname = $_POST["lastname"];
-echo "Ваше имя: <b>".$name . " " . $surname . "</b>";
+$surname = $_POST["lastname"]; //получение переменной
+echo "Ваше имя: <b>" . $name . " " . $surname . "</b>"; //точка это операция конкатенации
 ?>
 </body>
 </html>
