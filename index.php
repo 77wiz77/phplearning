@@ -59,11 +59,44 @@
   // echo "int_16 = $int_16";
 ?>
 
+<?php //тип double
+  // $a1 = 1.5; 
+  // $a2 = 1.3e4; // 1.3 * 10^4 или 13000
+  // $a3 = 6E-8; // 0.00000006
+  // echo $a1 . " | " . $a2 . " | " . $a3;
+?>
+
+<?php //тип boolean
+  // $foo = true;
+  // $a=10;
+  // $b=5;
+  // echo "foo = true <br>";
+  // if($foo) //если $foo равно true
+  //   echo $a+$b;
+  // else
+  //   echo $a-$b;
+  // $foo = false;
+  // echo "<br> foo = false <br>";
+  // if($foo)
+  //   echo $a+$b;
+  // else
+  //   echo $a-$b;
+?>
+
+<?php //Специальное значение NULL
+  $a;
+  echo $a;
+?>
+
 <?php
-  $a1 = 1.5; 
-  $a2 = 1.3e4; // 1.3 * 10^4 
-  $a3 = 6E-8; // 0.00000006
-  echo $a1 . " | " . $a2 . " | " . $a3;
+  $a=NULL;
+
+  if($a)
+      echo "Переменная a определена";
+  else
+      echo "Переменная a не определена";
+
+  $a=null;
 ?>
 
 </body>
