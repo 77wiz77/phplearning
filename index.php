@@ -477,20 +477,149 @@ x>>y - сдвигает число x вправо на y разрядов.
 ?>
 
 <!--Циклы-->
-<?php
+<?php //цикл for
+  // for ($i = 1; $i < 10; $i++)
+  // {
+  //     echo "Квадрат числа $i равен " . $i * $i . "<br/>";
+  // }
+?>
 
+<?php //цикл while
+  // $counter = 1;
+  // while($counter<10)
+  // {
+  //     echo $counter * $counter . "<br />";
+  //     $counter++;
+  // }
+
+  //или если всего одна конструкция можно убрать фигурные скобки так
+
+  // $counter = 0;
+  // while(++$counter<10)
+  //     echo $counter * $counter . "<br />";
+?>
+
+<?php //цикл do..while
+  // $counter = 1;
+  // do
+  // {
+  //     echo $counter * $counter . "<br />";
+  //     $counter++;
+  // }
+  // while($counter<10)
+?>
+
+<?php //оператор break прерывание
+  // for ($i = 1; $i < 10; $i++)
+  // {
+  //     $result = $i * $i;
+  //     if($result>80)
+  //     {
+  //         break;
+  //     }
+  //     echo "Квадрат числа $i равен $result <br/>";
+  // }
+?>
+
+<?php //оператор continie продолжение
+  // for ($i = 1; $i < 10; $i++)
+  // {
+  //     if($i==5)
+  //     {
+  //         continue;
+  //     }
+  //     echo "Квадрат числа $i равен " . $i * $i . "<br/>";
+  // }
+?>
+
+<!--Функции-->
+<?php
+  // function display()
+  // {
+  //     echo "вызов функции display()";
+  // }
 ?>
 
 <?php
+//  display();
+  
+//  function display()
+//  {
+//      echo "вызов функции display()";
+//  }
+?>
 
+<?php //Возвращение значения и оператор return
+  // $a = get(); //присваивание переменной а значения функции get
+  // echo "Сумма квадратов от 1 до 9 равна $a";
+  
+  // function get()
+  // {
+  //     $result = 0; // возвращаемое значение
+  //     for($i = 1; $i<10; $i++)
+  //     {
+  //         $result+= $i * $i;
+  //     }
+  //     return $result;
+  // }
+?>
+
+<?php //Использование параметров
+  // $a = get(1, 10);
+  // echo "Сумма квадратов от 1 до 9 равна $a";
+  
+  // function get($lowlimit, $highlimit)
+  // {
+  //     $result = 0; // возвращаемое значение
+  //     for($i = $lowlimit; $i < $highlimit; $i++)
+  //     {
+  //         $result+= $i * $i;
+  //     }
+  //     return $result;
+  // }
 ?>
 
 <?php
-
+  // function get($lowlimit, $highlimit=10) //задаем значение по умолчанию
+  // {
+  //     $result = 0; // возвращаемое значение
+  //     for($i = $lowlimit; $i < $highlimit; $i++)
+  //     {
+  //         $result+= $i * $i;
+  //     }
+  //     return $result;
+  // }
+  
+  // $a = get(1);
+  // echo "Сумма квадратов равна $a";
 ?>
 
-<?php
+<?php //передача по ссылке
+  // $number = 10; 
+  // get($number); //get считать значение переменной
+  // echo "<br /> \$number равно: $number";
+  
+  // function get($a)
+  // {
+  //     $a*=$a;
+  //     echo "Квадрат равен: $a";
+  // }
+?>
 
+<?php //передача параметра по ссылке
+  /*При передаче по ссылке перед параметром ставится знак амперсанда: function get(&$a). 
+  Теперь интерпретатор будет передавать не значение переменной, а ссылку на эту переменную в памяти, в итоге, 
+  переменная $number после передачи на место параметра &$a также будет изменяться.*/
+
+  // $number = 10; 
+  // get($number);
+  // echo "<br /> \$number равно: $number";
+  
+  // function get(&$a)
+  // {
+  //     $a*=$a;
+  //     echo "Квадрат равен: $a";
+  // }
 ?>
 
 </body>
