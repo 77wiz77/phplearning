@@ -686,26 +686,70 @@ x>>y - сдвигает число x вправо на y разрядов.
   то это подключение будет проигнорировано, так как файл уже подключен в программу.*/
 ?>
 
-<?php
-
+<?php //Инструкции require и require_once
+  //require "factorial.php"; //работает как include, только если файл не будет найден действие программы прекратится
 ?>
 
 <?php
+  //require_once "factorial.php"; //тоже самое что и require только используется один раз
 ?>
 
+<!--Массивы-->
 <?php
+  // $phones[0] = "Nokia N9";
+  // $phones[1] = "Samsung Galaxy ACE II";
+  // $phones[2] = "Sony Xperia Z3";
+  // $phones[3] = "Samsung Galaxy III";
+  
+  // for($i=0;$i<count($phones);$i++) //count(x) - количество элементов в массиве х
+  //     echo "$phones[$i] <br />";
+
+  // print_r($phones); //вывести массив в виде ключ/значение
 ?>
 
-<?php
+<?php //тоже самое что и в блоке выше
+  // $phones[] = "Nokia N9";
+  // $phones[] = "Samsung Galaxy ACE II";
+  // $phones[] = "Sony Xperia Z3";
+  // $phones[] = "Samsung Galaxy III";
+  // $num = count($phones); 
+  // for($i=0;$i<$num;$i++)
+  //     echo "$phones[$i] <br />";
+
+  // // получим элемент по ключу 1
+  // $myPhone = $phones[1];
+  // echo "$myPhone <br />";
+  // // присвоение нового значения
+  // $phones[1] = "Samsung X650";
+  // echo "$phones[1] <br />";
 ?>
 
-<?php
+<?php //также в качестве ключей могут использоваться строки
+  // $phones["nokia"] = "Nokia N9";
+  // $phones["samsumg"] = "Samsung Galaxy III";
+  // $phones["sony"] = "Sony Xperia Z3";
+  // $phones["apple"] = "iPhone5";
+  // echo $phones["samsumg"];
 ?>
 
-<?php
+<?php //оператор array / еще один способ создания массива
+  // $phones = array('iPhone', 'Samsung Galaxy S III', 'Nokia N9', 'Sony XPeria Z3');
+  // echo $phones[1];
 ?>
 
-<?php
+<?php //PHP автоматически нумерует элементы с нуля. Но мы также можем указать для каждого элемента ключ:
+  // $phones = array("apple"=>"iPhone5", "samsumg"=>"Samsung Galaxy III", 
+  // "nokia" => "Nokia N9", "sony" => "Sony XPeria Z3");
+  // echo $phones["samsumg"]
+?>
+
+<?php //перебор ассоциативных массивов
+  $phones = array("apple"=>"iPhone5", 
+                  "samsumg"=>"Samsung Galaxy III", 
+                  "nokia" => "Nokia N9", 
+                  "sony" => "Sony XPeria Z3");
+  foreach($phones as $item)
+      echo "$item <br />";
 ?>
 
 </body>
