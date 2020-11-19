@@ -744,12 +744,105 @@ x>>y - сдвигает число x вправо на y разрядов.
 ?>
 
 <?php //перебор ассоциативных массивов
-  $phones = array("apple"=>"iPhone5", 
-                  "samsumg"=>"Samsung Galaxy III", 
-                  "nokia" => "Nokia N9", 
-                  "sony" => "Sony XPeria Z3");
-  foreach($phones as $item)
-      echo "$item <br />";
+/*Ассоциативный массив - Это такие же массивы, только у них индекс не число, а строка. Или что угодно ещё. */
+  // $phones = array("apple"=>"iPhone5", 
+  //                 "samsumg"=>"Samsung Galaxy III", 
+  //                 "nokia" => "Nokia N9", 
+  //                 "sony" => "Sony XPeria Z3");
+  // foreach($phones as $item)
+  //     echo "$item <br />";
+  /*В цикле foreach из массива последовательно извлекаются все элементы и их значение помещается в переменную, 
+  указанную после ключевого слова as. В данном случае в переменную $item по очереди помещаются все четыре значения из массива $phones. 
+  Когда будет извлечен последний элемент из массива, цикл завершается.*/
+?>
+
+<?php //Цикл foreach позволяет извлекать не только значения, но и ключи элементов:
+  // $phones = array("apple"=>"iPhone5", 
+  //                 "samsumg"=>"Samsung Galaxy III", 
+  //                 "nokia" => "Nokia N9", 
+  //                 "sony" => "Sony XPeria Z3");
+  // foreach($phones as $key=>$value)
+  //     echo "$key => $value <br />";
+?>
+
+<?php //Альтернативу циклу foreach представляет использование функций list и each:
+  // $phones = array("apple"=>"iPhone5", 
+  //                 "samsumg"=>"Samsung Galaxy III", 
+  //                 "nokia" => "Nokia N9", 
+  //                 "sony" => "Sony XPeria Z3");
+  // while (list($key, $value) = each($phones))
+  //     echo "$key => $value <br />"; //тоже самое что и в блоке выше
+  /*Цикл while будет работать, пока функция each не вернет значение false. 
+  Функция each проходит по всем элементам массива $phones и получает его в виде массива, в который входят ключ и значение элемента. 
+  Затем этот массив передается функции list и проиcходит присваивает значения массива переменным внутри скобок. 
+  Когда функция each закончит перебор элементов массива $phones, она возвратит false, и действие цикла while будет завершено.*/
+?>
+
+<?php //многомерные массивы / в PHP массивы могут также быть многомерными, то есть такими, где элемент массива сам является массивом
+  // $phones = array(
+  //         "apple"=> array("iPhone5", "iPhone5s", "iPhone6") , 
+  //         "samsumg"=>array("Samsung Galaxy III", "Samsung Galaxy ACE II"),
+  //         "nokia" => array("Nokia N9", "Nokia Lumia 930"), 
+  //         "sony" => array("Sony XPeria Z3", "Xperia Z3 Dual", "Xperia T2 Ultra"));
+  // foreach ($phones as $brand => $items) //=>является разделителем для ассоциативных массивов. 
+  // //В контексте этого цикла foreach он присваивает ключ массива $brand и значение $items.
+  // {
+  //     echo "<h3>$brand</h3>";
+  //     echo "<ul>";
+  //     foreach ($items as $key => $value)
+  //     {
+  //         echo "<li>$value</li>";
+  //     }
+  //     echo "</ul>";
+  // }
+  	
+  // echo $phones["apple"][0];
+  // echo $phones["nokia"][1];
+?>
+
+<?php //Допустим, вложенные массивы также представляют ассоциативные массивы:
+  $technics = array(
+          "phones" => array("apple" => "iPhone5", 
+                      "samsumg" => "Samsung Galaxy III",
+                      "nokia" => "Nokia N9"),
+          "tablets" => array("lenovo" => "Lenovo IdeaTab A3500", 
+                          "samsung" => "Samsung Galaxy Tab 4",
+                          "apple" => "Apple iPad Air"));
+  foreach ($technics as $tovar => $items)
+  {
+      echo "<h3>$tovar</h3>";
+      echo "<ul>";
+      foreach ($items as $key => $value)
+      {
+          echo "<li>$key : $value</li>";
+      }
+      echo "</ul>";
+  }
+  // присвоим одному из элементов другое значение
+  $technics["phones"]["nokia"] = "Nokia Lumnia 930";
+  // выведем это значение
+  echo $technics["phones"]["nokia"];
+?>
+
+<!--Операции с массивами-->
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
 ?>
 
 </body>
