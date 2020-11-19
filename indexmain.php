@@ -6,6 +6,12 @@
   <title>MAIN</title>
 </head>
 <body>
+  <header>
+  </header>
+
+  <main>
+  </main>
+  
   <h1>Главная страница</h1>
   <ul>
     <li><a href="/legacy.php"><h2>1 Основы</h2></a></li>
