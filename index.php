@@ -801,48 +801,122 @@ x>>y - сдвигает число x вправо на y разрядов.
 ?>
 
 <?php //Допустим, вложенные массивы также представляют ассоциативные массивы:
-  $technics = array(
-          "phones" => array("apple" => "iPhone5", 
-                      "samsumg" => "Samsung Galaxy III",
-                      "nokia" => "Nokia N9"),
-          "tablets" => array("lenovo" => "Lenovo IdeaTab A3500", 
-                          "samsung" => "Samsung Galaxy Tab 4",
-                          "apple" => "Apple iPad Air"));
-  foreach ($technics as $tovar => $items)
-  {
-      echo "<h3>$tovar</h3>";
-      echo "<ul>";
-      foreach ($items as $key => $value)
-      {
-          echo "<li>$key : $value</li>";
-      }
-      echo "</ul>";
-  }
-  // присвоим одному из элементов другое значение
-  $technics["phones"]["nokia"] = "Nokia Lumnia 930";
-  // выведем это значение
-  echo $technics["phones"]["nokia"];
+  // $technics = array(
+  //         "phones" => array("apple" => "iPhone5", 
+  //                     "samsumg" => "Samsung Galaxy III",
+  //                     "nokia" => "Nokia N9"),
+  //         "tablets" => array("lenovo" => "Lenovo IdeaTab A3500", 
+  //                         "samsung" => "Samsung Galaxy Tab 4",
+  //                         "apple" => "Apple iPad Air"));
+  // foreach ($technics as $tovar => $items)
+  // {
+  //     echo "<h3>$tovar</h3>";
+  //     echo "<ul>";
+  //     foreach ($items as $key => $value)
+  //     {
+  //         echo "<li>$key : $value</li>";
+  //     }
+  //     echo "</ul>";
+  // }
+  // // присвоим одному из элементов другое значение
+  // $technics["phones"]["nokia"] = "Nokia Lumnia 930";
+  // // выведем это значение
+  // echo $technics["phones"]["nokia"];
 ?>
 
 <!--Операции с массивами-->
-<?php
+<?php //Функция is_array 
+  // //Функция is_array() проверяет, является ли переменная массивом, и если является, то возвращает true, иначе возвращает false.
+  // $isar = is_array($technics);
+  // echo ($isar==true)?"это массив":"это не массив";
+?>
+<?php //Функции count/sizeof
+  // //Функция count() и sizeof() получают количество элементов массива:
+  // $number = count($technics);
+  // // то же самое, что
+  // // $number = sizeof($technics);
+  // echo "В массиве technics $number элементов";
+?>
+<?php //Функции shuffle
+  // //Функция shuffle перемешивает элементы массивы случайным образом:
+  // $os = array("Windows 95", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 10");
+  // shuffle($os);
+  // print_r($os);
+  // // один из возможных вариантов
+  // // Array ( [0] => Windows 95 [1] => Windows 7 [2] => Windows Vista [3] => Windows XP [4] => Windows 10 [5] => Windows 8)
+?>
+<?php //Функции compact
+  // //Функция compact позволяет создать из набора переменных ассоциативный массив, где ключами будут сами имена переменных:
+  // $model = "Apple II";
+  // $producer = "Apple";
+  // $year = 1978;
+  
+  // $data = compact('model', 'producer', 'year');
+  // print_r($data);
+  // // получится следующий вывод
+  // // Array ( [model] => Apple II [producer] => Apple [year] => 1978 ) 
 
+  // //Функция compact получает в скобках набор переменных. 
+  // //Каждая переменная указывается в кавычка без знака $. Результатом функции является новый массив.
+?>
+
+<!--В PHP имеются два типа сортировки: сортировка строк по алфавиту и сортировка чисел по возрастанию/убыванию. 
+Если сортируемые значения представляют строки, то они сортируются по алфавиту, 
+если числа - то они сортируются в порядке возрастания чисел. PHP по умолчанию самостоятельно выбирает тип сортировки.
+
+Для сортировки по возрастанию используется функция asort:-->
+<?php //Сортировка массива с помощью функции asort()
+  // $tablets = array("lenovo" => "Lenovo IdeaTab A3500", 
+  //                         "samsung" => "Samsung Galaxy Tab 4",
+  //                         "apple" => "Apple iPad Air");
+  // asort($tablets);
+  
+  // echo "<ul>";
+  // foreach ($tablets as $key => $value)
+  // {
+  //     echo "<li>$key : $value</li>"; //будет сортировка массива по возрастанию по алфавитному порядку
+  // }
+  // echo "</ul>";
+?>
+<!--В данном случае значения массива представляют строки, поэтому PHP выберет сортировку по алфавиту. 
+Однако с помощью дополнительного параметра мы можем явно указать интерпретатору PHP тип сортировки. 
+Данный параметр может принимать три значения:
+SORT_REGULAR: автоматический выбор сортировки
+SORT_NUMERIC: числовая сортировка
+SORT_STRING: сортировка по алфавиту
+Укажем явно тип сортировки:-->
+<?php //указываем тип сортировки по алфавиту в функции asort 
+  //asort($tablets, SORT_STRING);
+?>
+<?php //Чтобы отсортировать массив в обратном порядке, применяется функция arsort:
+  //arsort($tablets);
+?>
+<!--Сортировка по ключам-->
+<?php /*Функция asort производит сортировку по значениям элементов, но также существует и еще и сортировка по ключам. 
+  Она представлена функцией ksort:*/
+  // ksort($tablets, SORT_STRING);
+  //Сортировка по ключам в обратном порядке выполняется функцией krsort():
+  // krsort($tablets);
+?>
+<!--Естественная сортировка-->
+<?php
+  $os = array("Windows 7", "Windows 8", "Windows 10");
+  asort($os);
+  print_r($os);
+  // результат
+  // Array ( [2] => Windows 10 [0] => Windows 7 [1] => Windows 8 ) 
 ?>
 
 <?php
-
+  $os = array("Windows 7", "Windows 8", "Windows 10");
+  natsort($os);
+  print_r($os);
+  // результат
+  // Array ( [0] => Windows 7 [1] => Windows 8 [2] => Windows 10) 
 ?>
 
 <?php
-
-?>
-
-<?php
-
-?>
-
-<?php
-
+  natcasesort($os);
 ?>
 
 </body>
