@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAIN</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
   <header class="header-page">
@@ -14,7 +14,7 @@
   <main>
     <section>
         <ul>
-          <li><a href="../index.php"><h2>Privet form</h2></a></li>
+          <li><a href="forLegacy/display.php"><h2>Base</h2></a></li>
         </ul>
     </section>
     
