@@ -14,7 +14,7 @@
   <main>
     <section>
         <ul>
-          <li><a href="forLegacy/display.php"><h2>Base</h2></a></li>
+          <li><a href="../index.php"><h2>Base</h2></a></li>
         </ul>
     </section>
     
