@@ -13,13 +13,13 @@
 
   <main>
     <section>
-      <ul>
-        <li><a href="/forLegacy/legacy.php"><h2>1 Основы</h2></a></li>
-        <li><a href="/forForm/index.php"><h2>2 Передача параметров, работа с формами</h2></a></li>
-        <li><a href="/legacy.php"><h2>3 Базовые возможности php</h2></a></li>
-        <li><a href="/legacy.php"><h2>4 Работа с файловой системой</h2></a></li>
-        <li><a href="/legacy.php"><h2>5 ООП</h2></a></li>
-        <li><a href="/legacy.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
+        <ul>
+          <li><a href="./phplearning/forForm/index.php"><h2>1 Основы</h2></a></li>
+          <li><a href="forForm/index.php"><h2>2 Передача параметров, работа с формами</h2></a></li>
+          <li><a href="/test.php"><h2>3 Базовые возможности php</h2></a></li>
+          <li><a href="/legacy.php"><h2>4 Работа с файловой системой</h2></a></li>
+          <li><a href="/legacy.php"><h2>5 ООП</h2></a></li>
+          <li><a href="/legacy.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
         </ul>
     </section>
     
