@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAIN</title>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Базовые возможности php</title>
 </head>
 <body>
-  <header class="header-page">
-    <h1>Главная страница</h1>
-  </header>
 
-  <main>
-    <section>
-        <ul>
-          <li><a href="../index.php"><h2>Base</h2></a></li>
-        </ul>
-    </section>
-    
-  </main>
+<header class="header-page">
+</header>
 
-  <footer class="footer-page">
-    <p></p>
-  </footer>
+<main>
+  <section>
+    <?php
+      $input = 'This is the end'; 
+      $search = 'is';
+      $position = strpos($input, $search); // 2
+      if($position!==false)
+      {
+          echo "Позиция подстроки '$search' в строке '$input': $position";
+      }
+    ?>
+  </section>
   
-  <!--<script src="js/.js"></script>-->
+</main>
+
+<footer class="footer-page">
+  <p></p>
+</footer>
+  
 </body>
 </html>
