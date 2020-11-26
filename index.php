@@ -22,6 +22,8 @@
           <li><a href="forBase/base.php"><h2>3.1 Базовые возможности php (Работа со строками)</h2></a></li>
           <li><a href="forBase/cookie.php"><h2>3.2 Куки (создать)</h2></a></li>
           <li><a href="forBase/cookiesave.php"><h2>3.3 Куки (принять)</h2></a></li>
+          <li><a href="forBase/session.php"><h2>3.4 Сессии (создать)</h2></a></li>
+          <li><a href="forBase/sessionsave.php"><h2>3.5 Сессии (принять)</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>4 Работа с файловой системой</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>5 ООП</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
