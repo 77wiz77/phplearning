@@ -24,7 +24,10 @@
           <li><a href="forBase/cookiesave.php"><h2>3.3 Куки (принять)</h2></a></li>
           <li><a href="forBase/session.php"><h2>3.4 Сессии (создать)</h2></a></li>
           <li><a href="forBase/sessionsave.php"><h2>3.5 Сессии (принять)</h2></a></li>
-          <li><a href="forLegacy/display.php"><h2>4 Работа с файловой системой</h2></a></li>
+          <li><a href="forFile/file.php"><h2>4.1 Работа с файловой системой (Чтение и запись файлов)</h2></a></li>
+          <li><a href="forLegacy/display.php"><h2>4 </h2></a></li>
+          <li><a href="forLegacy/display.php"><h2>4 </h2></a></li>
+          <li><a href="forLegacy/display.php"><h2>4 </h2></a></li>
           <li><a href="forLegacy/display.php"><h2>5 ООП</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
         </ul>
