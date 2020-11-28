@@ -27,8 +27,9 @@
           <li><a href="forFile/file.php"><h2>4.1 Работа с файловой системой (Чтение и запись файлов)</h2></a></li>
           <li><a href="forFile/catalog.php"><h2>4.2 Управление файлами и каталогами</h2></a></li>
           <li><a href="forFile/block.php"><h2>4.3 Блокировка файла. Функция flock</h2></a></li>
-          <li><a href="forLegacy/display.php"><h2>4.4 Отправка файлов на сервер</h2></a></li>
-          <li><a href="forLegacy/display.php"><h2>5 ООП</h2></a></li>
+          <li><a href="forFile/upload.php"><h2>4.4 Отправка файлов на сервер (одного файла)</h2></a></li>
+          <li><a href="forFile/uploadmulti.php"><h2>4.4 Отправка файлов на сервер (много файлов)</h2></a></li>
+          <li><a href="forOOP/display.php"><h2>5 ООП</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
         </ul>
     </section>
