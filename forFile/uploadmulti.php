@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 </head>
 <body>
-  <?php
+  <?php //Мультизагрузка
+  //Изменим скрипт upload.php так, чтобы он поддерживал множественную загрузку:
   if($_FILES)
   {
       foreach ($_FILES["uploads"]["error"] as $key => $error) { //извлечение ключей элементов с помощью цикла

@@ -30,9 +30,9 @@
           <li><a href="forFile/upload.php"><h2>4.4 Отправка файлов на сервер (одного файла)</h2></a></li>
           <li><a href="forFile/uploadmulti.php"><h2>4.4 Отправка файлов на сервер (много файлов)</h2></a></li>
           <li><a href="forOOP/class.php"><h2>5.1 ООП / Объекты и классы</h2></a></li>
-          <li><a href="forOOP/display.php"><h2>5.2 ООП / Наследование</h2></a></li>
-          <li><a href="forOOP/display.php"><h2>5.3 ООП / Модификаторы доступа</h2></a></li>
-          <li><a href="forOOP/display.php"><h2>5.4 ООП / Статические методы и свойства. Константы</h2></a></li>
+          <li><a href="forOOP/inheritance(наследование).php"><h2>5.2 ООП / Наследование</h2></a></li>
+          <li><a href="forOOP/modificators.php"><h2>5.3 ООП / Модификаторы доступа</h2></a></li>
+          <li><a href="forOOP/static.php"><h2>5.4 ООП / Статические методы и свойства. Константы</h2></a></li>
           <li><a href="forLegacy/display.php"><h2>6 Работа с базой данных MySQL</h2></a></li>
         </ul>
     </section>
