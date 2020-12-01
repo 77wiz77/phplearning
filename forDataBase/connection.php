@@ -1,6 +1,6 @@
 <?php //Подключение в PHP к MySQL и выполнение запросов
   $host = 'localhost'; // адрес сервера 
-  $database = 'compstore'; // имя базы данных
-  $user = 'root'; // имя пользователя
-  $password = '1234567'; // пароль
+  $database = 'learning'; // имя базы данных
+  $user = 'mysql'; // имя пользователя
+  $password = 'mysql'; // пароль
 ?>
