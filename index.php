@@ -33,10 +33,11 @@
           <li><a href="forOOP/inheritance(наследование).php"><h2>5.2 ООП / Наследование</h2></a></li>
           <li><a href="forOOP/modificators.php"><h2>5.3 ООП / Модификаторы доступа</h2></a></li>
           <li><a href="forOOP/static.php"><h2>5.4 ООП / Статические методы и свойства. Константы</h2></a></li>
-          <li><a href="forDataBase/BD.php"><h2>6.1 Работа с базой данных MySQL</h2></a></li>
-          <li><a href="forDataBase/display.php"><h2>6.2 Работа с базой данных MySQL</h2></a></li>
-          <li><a href="forDataBase/display.php"><h2>6.3 Работа с базой данных MySQL</h2></a></li>
-          <li><a href="forDataBase/display.php"><h2>6.4 Работа с базой данных MySQL</h2></a></li>
+          <li><a href="forDataBase/BD.php"><h2>6.1 Работа с базой данных MySQL (Подключение к БД, создание и удаление таблиц)</h2></a></li>
+          <li><a href="forDataBase/create.php"><h2>6.2 Добавление данных в таблицу</h2></a></li>
+          <li><a href="forDataBase/index.php"><h2>6.3 Получение данных</h2></a></li>
+          <li><a href="forDataBase/edit.php"><h2>6.4 Изменение данных</h2></a></li>
+          <li><a href="forDataBase/delete.php"><h2>6.4 Удаление данных</h2></a></li>
         </ul>
     </section>
     
