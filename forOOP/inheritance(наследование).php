@@ -52,7 +52,7 @@
   }
   
   $client = new Customer("Джон", 25, "1123400895");
-  $client->getInfo();
+  $client->getInfo(); //получаем общую информацию
   $client->getClassInfo();
 
   /*
