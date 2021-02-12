@@ -44,7 +44,7 @@
   </main>
 
   <footer class="footer-page">
-    <p></p>
+    <p>Footer</p>
   </footer>
   
   <!--<script src="js/.js"></script>-->
